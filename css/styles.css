@@ -288,18 +288,7 @@ ul {
 }
 
 
-.content-info-rectangle{
-    display: none;
-    background-color: #F4F4FD;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    flex-shrink: 0;
-    width: 264px;
-    height: 112px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
-}
+
 
 .content-info-icon{
     display: none;
@@ -1333,17 +1322,6 @@ padding-left: 0px;
             display: flex;
     }
         
-    .content-info-rectangle{
-            background-color: #F4F4FD;
-            border: 1px solid #8E8F99;
-            border-radius: 4px;
-            flex-shrink: 0;
-            width: 264px;
-            height: 112px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    }
 
     .description-content-info{
         width: 264px;
