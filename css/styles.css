@@ -30,6 +30,7 @@ p{
 .header .container {
     display: flex;
     align-items: center;
+    margin-left: 0px;
 }
 
 .container{
@@ -210,7 +211,7 @@ ul {
     background-color: #2e2f42;
     flex-shrink: 0;
     padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -221,7 +222,7 @@ ul {
 
 .main-content{
     color: white;
-    max-width: 496px;
+    width: 288px;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -230,7 +231,8 @@ ul {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 48px;
-
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .button-style{
@@ -266,7 +268,6 @@ ul {
 /* Section 2 */
 
 .section-content-info{
-    /* padding: 120px 0; */
     padding: 96px 0px;
     
 }
@@ -465,8 +466,8 @@ ul {
 /* Section 4 */
 
 .section-portfolio{
-    padding-top: 120px; 
-    padding-bottom: 120px;
+    padding-top: 96px; 
+    padding-bottom: 96px;
 }
 
 
@@ -506,7 +507,7 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     padding-top: 0px;
-    margin-bottom: 120px;
+    margin-bottom: 72px;
 }
 
 
@@ -613,7 +614,6 @@ ul {
 .footer-social-media{
     text-align: center;
     align-items: center;
-    margin-bottom: 72px;
 }
 
 .icons-ellipse-two{
@@ -689,6 +689,7 @@ ul {
     display: flex;
     gap: 16px;
     padding-bottom: 16px;
+    padding-top: 72px;
     align-items: center;
     justify-content: center;
     
@@ -999,20 +1000,17 @@ padding-left: 0px;
 
     .menu{
         display: flex;
-        margin-right: 149px;
+        margin: auto;
     }
 
     .open-menu{
         visibility: hidden;
-        pointer-events: none;
         opacity: 0;
-        display: block;
         position: fixed;
         top: 0%;
-        left: 50%;
-        transform: translate(-50%, -0%) scale(1);
-        width: 320px;
-        min-height: 640px;
+        left: 0%;
+        width: 100%;
+        min-height: 100%;
         background: #FFF;
         z-index: 1;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1022,6 +1020,8 @@ padding-left: 0px;
     .open-menu.is-open{
         visibility: visible;
         opacity: 1;
+        padding-left: 16px;
+        padding-top: 72px;
     }
 
     .icon-close-mob{
@@ -1030,8 +1030,8 @@ padding-left: 0px;
         width: 24px;
         height: 24px;
         display: block;
-        right: 0;
-        top: 0;
+        right: 24px;
+        top: 24px;
         margin-top: 24px;
         margin-right: 24px;
         border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1056,13 +1056,16 @@ padding-left: 0px;
     }
 
     .mob-nav-item{
-        color: #2E2F42;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11; 
         letter-spacing: 0.02em;
         text-transform: capitalize;
         padding-bottom: 40px;
+    }
+
+    .link-mob{
+        color: var(--NAVY-BLUE, #2E2F42);
     }
 
     .one-nav{
@@ -1075,8 +1078,8 @@ padding-left: 0px;
     }
 
     .mob-nav-contacts{
-        padding-top: 128px;
-        padding-left: 16px;
+        padding-top: 0px;
+        margin-top: 168px;
     }
 
     .contact-connection-mob{
@@ -1101,7 +1104,6 @@ padding-left: 0px;
 
     .icons-ellipse-mob{
         display: flex; 
-        justify-content: center;
         margin-top: 8px;
         gap: 40px;
     }
@@ -1128,7 +1130,7 @@ padding-left: 0px;
 @media screen and (min-width:768px){
    .container-info{
     display: flex;
-    gap: 24px;
+    gap: 72px 24px;
     flex-wrap: wrap;
     
    }
@@ -1141,9 +1143,6 @@ padding-left: 0px;
     margin-left: 120px;
 }
 
-.logo{
-    margin-right: 0px;
-}
 
     .contacts-list{
     font-style: normal;
@@ -1158,6 +1157,9 @@ padding-left: 0px;
         font-weight: 400;
     }
 
+    .logo{
+        margin-right: 0px;
+    }
     .menu{
         display: flex;
         margin-right: 80px;
@@ -1168,22 +1170,31 @@ padding-left: 0px;
    }
 
    .container{
-    min-width: 768px;
+    max-width: 768px;
     gap: 72px 24px;
     padding-left: 16px;
-    margin-left: 0px;
     }
 
     .main-content{
         font-size: 56px;
+        padding: 0px;
+        width: 496px;
     }
 
+    .section-content-info{
+        padding: 112px 0px;
+        
+    }
 
-.content-info-top{
+    .main-content-team-list{
+        gap: 64px 24px;
+    }
+
+    .content-info-top{
     width: calc((100% - 24px) / 2);
     }
 
-.description-content-info{
+    .description-content-info{
     width: 356px;
     }
 
@@ -1192,14 +1203,12 @@ padding-left: 0px;
     }
 
     .footer-text{
-        min-width: 768px;
-        padding-left: 108px;
+        max-width: 768px;
     }
 
     .social-media-text{
         display: flex;
     }
-
 
     .container-footer{
         display: flex;
@@ -1249,9 +1258,12 @@ padding-left: 0px;
 
 /* for dekstop */
 @media screen and (min-width:1158px){
+    .footer-text{
+        max-width: 1158px;
+    }
+
     .container{
         max-width: 1158px;
-        margin-right: 0px;
     }
 
     .header-top{
@@ -1295,11 +1307,17 @@ padding-left: 0px;
     .main-content{
         font-size: 56px;
         width: 496px;
+        padding-top: 188px;
+    }
+
+    .main-content-section{
+        padding-top: 0px;
     }
 
     .main-content-team-list{
         gap: 24px;
         }
+
 
     .content-info-rectangle{
         background-color: #F4F4FD;
@@ -1354,15 +1372,6 @@ padding-left: 0px;
         display: flex;
         flex-wrap: nowrap;
     }
-
-    
-
-    .footer-text{
-        padding-top: 101.7px;
-        padding-left: 0px;
-        height: 312px;
-    }
-  
     
     .logo-plus-p{
         margin-right: 120px;
@@ -1395,6 +1404,13 @@ padding-left: 0px;
         width: 264px;
     }
 
+    .container-footer.container{
+        width: auto;
+    }
+
+    .section-portfolio{
+        padding-top: 72px; 
+    }
     
 
     .but-mob-menu{
@@ -1413,7 +1429,7 @@ padding-left: 0px;
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("../images/background1x.jpg");
+        url("../images/background-deck.jpg");
     }
   }
 
@@ -1423,6 +1439,6 @@ padding-left: 0px;
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("../images/background2x.jpg");
+        url("../images/background-deck.jpg");
     }
   }
