@@ -301,6 +301,10 @@ ul {
     margin-bottom: 8px;
 }
 
+.content-info-icon{
+    display: none;
+}
+
 
 
 .visually-hidden {
