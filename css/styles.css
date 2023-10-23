@@ -35,7 +35,6 @@ p{
 
 .container{
     max-width: 320px;
-    margin: 0px auto;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -215,14 +214,13 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* max-width: 1440px;  */
     margin: 0 auto;
     
 }
 
 .main-content{
     color: white;
-    width: 288px;
+    max-width: 200px;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -231,8 +229,6 @@ ul {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .button-style{
@@ -652,6 +648,7 @@ ul {
 
 .e-mail-container{
     display: block;
+    margin-top: 72px;
 }
 
 .button-subscribe{
@@ -687,9 +684,8 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     display: flex;
+    margin-bottom: 16px;
     gap: 16px;
-    padding-bottom: 16px;
-    padding-top: 72px;
     align-items: center;
     justify-content: center;
     
@@ -989,10 +985,10 @@ padding-left: 0px;
         display: block;
         right: auto;
         background-color: transparent;
-        margin-right: 16px;
         border: none;
 
     }
+
 
     .icon-mob{
         fill:     #2F2F37;
@@ -1032,8 +1028,6 @@ padding-left: 0px;
         display: block;
         right: 24px;
         top: 24px;
-        margin-top: 24px;
-        margin-right: 24px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         align-items: center;
         justify-content: center;
@@ -1051,8 +1045,6 @@ padding-left: 0px;
     }
 
     .mob-nav-list{
-        margin-top: 72px;
-        margin-left: 16px;
     }
 
     .mob-nav-item{
@@ -1135,6 +1127,7 @@ padding-left: 0px;
     
    }
 
+
    .header-top{
     display: flex;
     gap: 40px;
@@ -1143,6 +1136,7 @@ padding-left: 0px;
     margin-left: 120px;
 }
 
+    
 
     .contacts-list{
     font-style: normal;
@@ -1157,12 +1151,20 @@ padding-left: 0px;
         font-weight: 400;
     }
 
+    .mail-cont{
+        margin-bottom: 12px;
+    }
+
     .logo{
         margin-right: 0px;
     }
     .menu{
         display: flex;
         margin-right: 80px;
+    }
+
+    .section-content-info{
+        max-width: 1158px;
     }
 
    .content-info{
@@ -1172,17 +1174,25 @@ padding-left: 0px;
    .container{
     max-width: 768px;
     gap: 72px 24px;
-    padding-left: 16px;
     }
 
     .main-content{
         font-size: 56px;
         padding: 0px;
-        width: 496px;
+        max-width: 496px;
+        align-items: center;
+        display: flex;
+    }
+
+
+    .main-content-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-tab.jpg);
+        margin: 0px;
+        padding-top: 112px;
     }
 
     .section-content-info{
-        padding: 112px 0px;
+        padding: 96px 0px;
         
     }
 
@@ -1200,6 +1210,10 @@ padding-left: 0px;
 
     .main-content-portfolio-item{
         width: calc((100% - 24px) / 2);
+    }
+
+    .section-portfolio{
+        max-width: 1158px;
     }
 
     .footer-text{
@@ -1237,6 +1251,7 @@ padding-left: 0px;
     .logo-plus-p{
         padding-right: 0px;
         text-align: start;
+        margin-bottom: 0px;
     }
 
     .e-mail-container{
@@ -1279,11 +1294,15 @@ padding-left: 0px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 332px;
-    }    
+    }   
+    
+    .contact-connection{
+        font-size: 16px;
+    }
 
+    
     .menu{
-        margin-right: 0px;
+        margin-right: 256px;
     }
 
     .logo{
@@ -1304,14 +1323,31 @@ padding-left: 0px;
             
     }
 
+    .main-content-section{
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .section-content-info{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
     .main-content{
         font-size: 56px;
         width: 496px;
-        padding-top: 188px;
     }
 
     .main-content-section{
-        padding-top: 0px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-deck.jpg);
+    }
+
+    .our-team{
+        padding-top: 120px;
+    }
+
+    .main-content-team{
+        margin-bottom: 120px;
     }
 
     .main-content-team-list{
@@ -1367,6 +1403,10 @@ padding-left: 0px;
         width: calc((100% - 48px) / 3);
     }
     
+    .main-content-portfolio{
+        padding-bottom: 120px;
+        margin-bottom: 0px;
+    }
 
     .container-footer{
         display: flex;
@@ -1387,6 +1427,10 @@ padding-left: 0px;
         margin-left: 0px;
     }
 
+    .label{
+        margin-bottom: 16px;
+    }
+    
     .input-form{
        width: 264px;
         }
@@ -1409,7 +1453,8 @@ padding-left: 0px;
     }
 
     .section-portfolio{
-        padding-top: 72px; 
+        padding-top: 120px; 
+        padding-bottom: 120px;
     }
     
 
@@ -1439,6 +1484,6 @@ padding-left: 0px;
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url("../images/background-deck.jpg");
+        url("../images/background-tab.jpg");
     }
   }
