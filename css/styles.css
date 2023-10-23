@@ -206,17 +206,6 @@ ul {
 /* Section 1 */
 
 
-.main-content-section {
-    background-color: #2e2f42;
-    flex-shrink: 0;
-    padding: 72px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    
-}
 
 .main-content{
     color: white;
@@ -347,6 +336,7 @@ ul {
 
 
 }
+
 
 .main-content-team-list{
     padding: 0px;
@@ -989,6 +979,18 @@ padding-left: 0px;
 
     }
 
+    .main-content-section {
+        background-color: #2e2f42;
+        flex-shrink: 0;
+        padding: 72px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        
+    }
+
 
     .icon-mob{
         fill:     #2F2F37;
@@ -1323,11 +1325,6 @@ padding-left: 0px;
             
     }
 
-    .main-content-section{
-        padding-top: 188px;
-        padding-bottom: 188px;
-    }
-
     .section-content-info{
         padding-top: 120px;
         padding-bottom: 120px;
@@ -1340,6 +1337,8 @@ padding-left: 0px;
 
     .main-content-section{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background-deck.jpg);
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
     .our-team{
@@ -1430,7 +1429,7 @@ padding-left: 0px;
     .label{
         margin-bottom: 16px;
     }
-    
+
     .input-form{
        width: 264px;
         }
